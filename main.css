@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    width: 100;
+    width: 100%;
     background-color: white;
 }
 
@@ -156,9 +156,9 @@ header {
 }
 
 .ipad {
-    width: 60%;
+    width: 1000px;
     position: absolute;
-    right: 0;
+    right: -7%;
     bottom: 70px;
 }
 
@@ -293,6 +293,39 @@ footer ul,
 }
 
 /*~~~~~responsive~~~~~~*/
+@media only screen and (min-width: 1900px) and (max-width: 2600px) {
+    .ipad {
+        width: 2000px;
+        height: 800px;
+        left: 50%;
+        margin-bottom: -1.5%;
+    }
+
+    .new4kMovies ul {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    header p {
+        font-size: 22px; */
+        margin-top: 40px;
+    }
+
+    .sectionTitle {
+        /* margin: 50px 0 20px 30px;       */
+        
+    }
+}
+
+
+@media only screen and (min-width: 1400px) {
+       .ipad {
+        width: 1000px;
+        right: 0%;
+    }
+}
+
 
 @media only screen and (max-width: 1200px) {
     header {
@@ -319,7 +352,7 @@ footer ul,
     .iphone {
         display: block;
         transform: rotate(75deg);
-        margin-top: 110px; 
+        margin-top: 110px;
     }
 }
 
@@ -375,5 +408,9 @@ footer ul,
 
     h1 {
         font-size: 36px;
+    }
+
+    p br {
+        display: none;
     }
 }
